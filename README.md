@@ -5,5 +5,9 @@ Rego is a simple utility to rename files in a directory.  You give it a regular 
 Example Usage:
 
 ```
-rego
+rego '(.*)\.tgz' '${1}.tar.gz'
 ```
+
+This will rename all files in the current directory that end in .tgz to ones that end in .tar.gz.
+
+For the arguments, it's advisable to use single quotes to stop bash from interpreting their contents.
